@@ -1,0 +1,17 @@
+{
+	"name": "forgge/forgge",
+	"type": "library",
+	"autoload": {
+		"psr-4": {
+			"Forgge\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=8.4",
+		"league/container": "^5.2",
+		"psr/container": "^2.0"
+	},
+	"require-dev": {
+		"symfony/var-dumper": "^8.1"
+	}
+}
