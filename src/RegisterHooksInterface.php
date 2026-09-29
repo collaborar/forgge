@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forgge\Contracts;
+namespace Forgge;
 
 interface RegisterHooksInterface
 {
@@ -12,5 +12,5 @@ interface RegisterHooksInterface
 	 *
 	 * @return void
 	 */
-	public function registerHooks(): void;
+	public function register_hooks(): void;
 }

@@ -4,10 +4,16 @@ declare(strict_types=1);
 
 namespace Forgge;
 
-use Forgge\Contracts\RegisterHooksInterface;
 use League\Container\Container as LeagueContainer;
 use League\Container\Definition\DefinitionInterface;
 
+/**
+ * League container modified container.
+ *
+ * When adding a service that contains RegisterHooksInterface, we add
+ * a tag, so we can collect all services that contains this interface and
+ * call registerHooks().
+ */
 class Container extends LeagueContainer
 {
 	public function add(string $id, mixed $concrete = null, bool $overwrite = false): DefinitionInterface
